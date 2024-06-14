@@ -103,10 +103,11 @@ public class OrderCompleteTest extends BasePage {
         shipMethod.getContinueBtn().click();
         
         OrderFormPayment orderPay = new OrderFormPayment(driver);
+        //Click pay by check
         orderPay.getPayByCheckRadioBtn().click();
         orderPay.getTermsConditionsCheckbox().click();
         orderPay.getOrderBtn().click();
-        
+         
         
         
         

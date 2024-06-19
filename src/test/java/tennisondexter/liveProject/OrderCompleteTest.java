@@ -119,6 +119,6 @@ public class OrderCompleteTest extends BasePage {
             driver.quit();
             driver = null;
         }
-        System.out.println("Your Test Passed!");
+
     }
 }

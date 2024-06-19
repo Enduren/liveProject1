@@ -31,10 +31,12 @@ public class HomePage {
 	By testStoreLink = By.linkText("TEST STORE");
 	By aboutMeLink = By.linkText("ABOUT ME");
 	By cookie = By.cssSelector(".close-cookie-warning > span");
-	
-	
+
+
+
+
 	//constructors
-	public void Homepage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}
 	

@@ -66,14 +66,14 @@ public class AddRemoveBasketTest extends BasePage{
         Thread.sleep(3000);
     	
     }
-//    
-//    @AfterTest
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//            driver = null;
-//        }
+
+    @AfterTest
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
         
-//    }
+    }
 
 }

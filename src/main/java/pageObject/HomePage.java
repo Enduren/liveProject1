@@ -18,7 +18,7 @@ public class HomePage {
 	By calcLink = By.linkText("CALCULATOR (JS)");
 	By contactUsLink = By.linkText("CONTACT US FORM TEST");
 	By datePickerLink = By.linkText("DATE PICKER");
-	By dropdownLink = By.linkText("DROPDOWN CHECKBOX & RADIO");
+	By dropdownLink = By.xpath("//a[normalize-space()='DropDown Checkbox Radio']");
 	By fileUpload = By.linkText("FILE UPLOAD");
 	By hiddenElementsLink = By.linkText("HIDDEN ELEMENTS");
 	By iFrameLink = By.linkText("IFRAME");

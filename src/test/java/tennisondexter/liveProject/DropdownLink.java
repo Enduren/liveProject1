@@ -1,6 +1,7 @@
 package tennisondexter.liveProject;
 
 import base.BasePage;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObject.HomePage;
@@ -45,4 +46,14 @@ public class DropdownLink extends BasePage {
         // Click the dropdown link
         dropdownLink.click();
     }
+
+    @AfterTest
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+
+    }
+
 }

@@ -4,6 +4,7 @@ import base.BasePage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pageObject.DropdownCheckboxPage;
 import pageObject.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,6 +46,19 @@ public class DropdownLink extends BasePage {
 
         // Click the dropdown link
         dropdownLink.click();
+        DropdownCheckboxPage dropcheck = new DropdownCheckboxPage(driver);
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(dropcheck.getRadioButton2())).click();
+
+        // Print out for debugging
+        if (dropcheck != null) {
+            System.out.println("Dropcheck element is found and will be clicked.");
+        } else {
+            System.out.println("Dropcheck element is NOT found.");
+        }
+
+
     }
 
     @AfterTest

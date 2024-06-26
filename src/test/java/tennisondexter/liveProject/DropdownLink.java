@@ -49,14 +49,34 @@ public class DropdownLink extends BasePage {
         DropdownCheckboxPage dropcheck = new DropdownCheckboxPage(driver);
 
 
-        wait.until(ExpectedConditions.elementToBeClickable(dropcheck.getRadioButton2())).click();
+        WebElement radioButton2 = wait.until(ExpectedConditions.elementToBeClickable(dropcheck.getRadioButton2()));
 
+        radioButton2.click();
         // Print out for debugging
-        if (dropcheck != null) {
-            System.out.println("Dropcheck element is found and will be clicked.");
+        if (radioButton2 != null) {
+            System.out.println("RadioButton2 element is found and will be clicked.");
         } else {
-            System.out.println("Dropcheck element is NOT found.");
+            System.out.println("RadioButton2 element is NOT found.");
         }
+
+        WebElement radioButton3 =wait.until(ExpectedConditions.elementToBeClickable(dropcheck.getRadioButton3()));
+        if (radioButton3 != null) {
+            System.out.println("RadioButton3 element is found and will be clicked.");
+        } else {
+            System.out.println("RadioButton3 element is NOT found.");
+        }
+        radioButton3.click();
+
+
+        WebElement radioButton1 =wait.until(ExpectedConditions.elementToBeClickable(dropcheck.getRadioButton1()));
+        if (radioButton1 != null) {
+            System.out.println("RadioButton1 element is found and will be clicked.");
+        } else {
+            System.out.println("RadioButton1 element is NOT found.");
+        }
+        radioButton1.click();
+
+
 
 
     }

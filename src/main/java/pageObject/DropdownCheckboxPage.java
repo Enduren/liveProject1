@@ -11,6 +11,7 @@ public class DropdownCheckboxPage {
     By radioButton1 = new By.ByCssSelector("#main > div > div:nth-child(5) > div:nth-child(1) > div:nth-child(3) > label");
     By radioButton2 = new By.ByCssSelector("#main > div > div:nth-child(5) > div:nth-child(1) > div:nth-child(4) > label");
     By radioButton3 = new By.ByCssSelector("#main > div > div:nth-child(5) > div:nth-child(1) > div:nth-child(5) > label");
+    By carSelector = new By.ByCssSelector("#cars");
 
 
     public DropdownCheckboxPage(WebDriver driver) {
@@ -27,6 +28,10 @@ public class DropdownCheckboxPage {
 
     public WebElement getRadioButton3() {
         return driver.findElement(radioButton3);
+    }
+
+    public WebElement carSelector() {
+        return driver.findElement(carSelector);
     }
 
 

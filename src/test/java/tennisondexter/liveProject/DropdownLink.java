@@ -1,6 +1,7 @@
 package tennisondexter.liveProject;
 
 import base.BasePage;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -75,6 +76,17 @@ public class DropdownLink extends BasePage {
             System.out.println("RadioButton1 element is NOT found.");
         }
         radioButton1.click();
+
+        WebElement carDropdown = wait.until(ExpectedConditions.visibilityOf(dropcheck.carSelector()));
+        Select select = new Select(carDropdown);
+
+        if (select != null) {
+            System.out.println("select element is found and will be selected.");
+        } else {
+            System.out.println("select element is NOT found.");
+        }
+        select.selectByVisibleText("Jeep");
+
 
 
 

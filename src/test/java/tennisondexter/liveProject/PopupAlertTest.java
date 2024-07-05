@@ -35,6 +35,8 @@ public class PopupAlertTest extends BasePage {
 
         popAlert.getTrigger().click();
 
+        popAlert.getAlert().click();
+
 
     }
 

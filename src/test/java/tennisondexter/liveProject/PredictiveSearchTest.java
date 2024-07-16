@@ -1,6 +1,7 @@
 package tennisondexter.liveProject;
 
 import base.BasePage;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -36,6 +37,8 @@ public class PredictiveSearchTest extends BasePage {
         PredictiveSearch preSearch= new PredictiveSearch(driver);
 
         Assert.assertEquals(preSearch.getActualText().getText(),"Predictive Text Search");
+
+        preSearch.getSearchBar().sendKeys("USA"+ Keys.ENTER);
     }
 
     @AfterTest

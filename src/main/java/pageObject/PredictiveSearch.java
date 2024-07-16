@@ -16,7 +16,7 @@ public class PredictiveSearch {
         this.driver = driver;
     }
 
-    public WebElement getText() {
+    public WebElement getActualText() {
         return driver.findElement(actualText);
     }
 

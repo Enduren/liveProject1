@@ -11,6 +11,7 @@ public class PredictiveSearch {
 
     By actualText = new By.ByCssSelector("#content");
     By searchBar = new By.ByCssSelector("#myInput");
+    By searchBarList= new By.ByCssSelector("#myInputautocomplete-list");
 
     public PredictiveSearch(WebDriver driver) {
         this.driver = driver;
@@ -22,5 +23,9 @@ public class PredictiveSearch {
 
     public WebElement getSearchBar() {
         return driver.findElement(searchBar);
+    }
+
+    public WebElement getSearchBarList() {
+        return driver.findElement(searchBarList);
     }
 }

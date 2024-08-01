@@ -39,6 +39,8 @@ public class PredictiveSearchTest extends BasePage {
         Assert.assertEquals(preSearch.getActualText().getText(),"Predictive Text Search");
 
         preSearch.getSearchBar().sendKeys("USA"+ Keys.ENTER);
+
+        preSearch.getSearchBarList();
     }
 
     @AfterTest
